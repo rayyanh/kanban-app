@@ -7,7 +7,6 @@ class Card extends Component {
                 <div class="card-header">Task 1</div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Cras justo odio</li>
-                    
                 </ul>
             </div>
         )
