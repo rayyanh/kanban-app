@@ -6,8 +6,8 @@ export default class Board extends Component{
         <div>
             <br/>
             <div className = "">Board goes here</div>
+            <br/>
         </div>
-        
         )
     }
 }
