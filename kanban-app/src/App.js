@@ -3,6 +3,7 @@ import './App.css';
 import Board from './components/board';
 import Column from './components/column';
 
+
 class App extends Component {
 render() {
 	return (
@@ -30,6 +31,7 @@ render() {
 			<div className="container">
 				<Column></Column>
 			</div>
+			
 	</div>
 	);
 }

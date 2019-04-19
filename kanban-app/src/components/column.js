@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Card from './card';
+
 
 export default class Column extends Component {
     render() {
@@ -7,27 +9,17 @@ export default class Column extends Component {
                 <div className="col-lg-4">
                     <div className="card">
                         <div className="card-body">
-                            <h5 className="card-title">To Do</h5>
-                            
+                            <h5 className="card-title">{columnInfo.title}</h5>
                         </div>
+                        <Card/>
                     </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="card">
-                        <div className="card-body">
-                            <h5 className="card-title">In Progress</h5>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="card">
-                        <div className="card-body">
-                            <h5 className="card-title">Done</h5>
-                            
-                        </div>
-                    </div>
-                </div>
+                </div>  
             </div>
         )
     }
 }
+
+var columnInfo = {
+    title: 'To Do',
+}
+
