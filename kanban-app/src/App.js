@@ -26,13 +26,10 @@ render() {
 			</ul>
 		</div>
 		</nav>
-			<Board>
-			</Board>
-				<div className="row">
+			<Board/>
+			<div className="container">
 				<Column/>
-				<Column/>
-				<Column/>
-				</div>
+			</div>
 	</div>
 	);
 }
