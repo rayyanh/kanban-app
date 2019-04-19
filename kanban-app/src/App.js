@@ -29,7 +29,11 @@ render() {
 		</nav>
 			<Board/>
 			<div className="container">
-				<Column></Column>
+			<div className = "row">
+					<Column title = "To Do"></Column>
+					<Column title = "In Progress"></Column>
+					<Column title = "Completed"></Column>		
+				</div>
 			</div>
 			
 	</div>

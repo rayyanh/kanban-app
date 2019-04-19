@@ -3,11 +3,23 @@ import React, { Component } from 'react';
 class Card extends Component {
     render() {
         return (
+            <div>
+            <div className="container" style={{ paddingBottom: '10%' }}>
             <div className="card">
                 <div class="card-header">Task 1</div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Cras justo odio</li>
                 </ul>
+            </div> 
+            </div>  
+            <div className="container" style={{ paddingBottom: '10%' }}>
+                <div className="card">
+                    <div class="card-header">Task 1</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                </div>
+            </div> 
             </div>
         )
     }
