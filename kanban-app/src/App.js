@@ -28,7 +28,7 @@ render() {
 		</nav>
 			<Board/>
 			<div className="container">
-				<Column/>
+				<Column></Column>
 			</div>
 	</div>
 	);
