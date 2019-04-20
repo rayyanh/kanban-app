@@ -2,9 +2,25 @@ import React, { Component } from 'react';
 import './App.css';
 import Board from './components/board';
 import Column from './components/column';
+import TodoList from './components/todolist';
 
 
 class App extends Component {
+	state = {
+		count: 0
+	};
+
+	increment = () => {
+		this.setState({
+			count: this.state.count + 1
+		});
+	};
+
+	decrement = () => {
+		this.setState({
+			count: this.state.count - 1
+		});
+	};
 render() {
 	return (
 	<div className="App">
@@ -14,12 +30,16 @@ render() {
 					
 				</a>
 			</nav>
-			<Board/>
+			<br/>
+			<br/>
+			<h4>Kanban Board</h4>
+			<br/>
 			<div className="container">
 			<div className = "row">
 					<Column title = "TO DO"></Column>
 					<Column title = "IN PROGRESS"></Column>
-					<Column title = "COMPLETED"></Column>		
+					<Column title = "COMPLETED"></Column>
+							
 				</div>
 			</div>
 			
