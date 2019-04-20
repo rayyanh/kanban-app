@@ -11,7 +11,7 @@ export default class Column extends Component {
                         <div className="card-body">
                             <h5 className="card-title">{this.props.title}</h5>
                         </div>
-                        <Card/>
+                        <Card color = "cardOne"/>
                     </div>
                 </div>  
 

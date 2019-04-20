@@ -6,7 +6,7 @@ class Card extends Component {
         return (
             <div>
             <div className="container" style={{ paddingBottom: '10%' }}>
-            <div className="cardOne">
+            <div className={this.props.color}>
                         <div className="container"><TodoList /></div>
                         
             </div> 
