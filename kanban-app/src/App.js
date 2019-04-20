@@ -38,8 +38,7 @@ render() {
 			<div className = "row">
 					<Column title = "TO DO"></Column>
 					<Column title = "IN PROGRESS"></Column>
-					<Column title = "COMPLETED"></Column>
-							
+					<Column title = "COMPLETED"></Column>	
 				</div>
 			</div>
 			

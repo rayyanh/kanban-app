@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TodoList from './todolist';
 
 class Card extends Component {
     render() {
@@ -6,20 +7,10 @@ class Card extends Component {
             <div>
             <div className="container" style={{ paddingBottom: '10%' }}>
             <div className="cardOne">
-                <div class="card-header">Task 1</div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                </ul>
+                        <div className="container"><TodoList /></div>
+                        
             </div> 
             </div>  
-            <div className="container" style={{ paddingBottom: '10%' }}>
-                <div className="cardTwo">
-                    <div class="card-header">Task 1</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                    </ul>
-                </div>
-            </div> 
             </div>
         )
     }
