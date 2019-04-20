@@ -5,7 +5,7 @@ class Card extends Component {
         return (
             <div>
             <div className="container" style={{ paddingBottom: '10%' }}>
-            <div className="cardToDo">
+            <div className="cardOne">
                 <div class="card-header">Task 1</div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Cras justo odio</li>
@@ -13,7 +13,7 @@ class Card extends Component {
             </div> 
             </div>  
             <div className="container" style={{ paddingBottom: '10%' }}>
-                <div className="cardToDo">
+                <div className="cardTwo">
                     <div class="card-header">Task 1</div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cras justo odio</li>

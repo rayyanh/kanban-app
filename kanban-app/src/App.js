@@ -17,9 +17,9 @@ render() {
 			<Board/>
 			<div className="container">
 			<div className = "row">
-					<Column title = "To Do"></Column>
-					<Column title = "In Progress"></Column>
-					<Column title = "Completed"></Column>		
+					<Column title = "TO DO"></Column>
+					<Column title = "IN PROGRESS"></Column>
+					<Column title = "COMPLETED"></Column>		
 				</div>
 			</div>
 			
