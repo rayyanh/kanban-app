@@ -17,6 +17,7 @@ export default class Column extends Component {
 
         )
     }
+    
 }
 
 
