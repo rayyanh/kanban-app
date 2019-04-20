@@ -5,9 +5,17 @@ export default class Board extends Component{
         return (
         <div>
             <br/>
-            <div className = "">Board goes here</div>
+            <div className = ""><h1 className="title">{whatView(boardStance)}</h1></div>
             <br/>
         </div>
         )
+    }
+}
+
+var boardStance = "Kanban Board";
+
+function whatView(boardStance){
+    if(boardStance) {
+        return boardStance;
     }
 }

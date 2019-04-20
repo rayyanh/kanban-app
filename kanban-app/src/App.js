@@ -2,34 +2,46 @@ import React, { Component } from 'react';
 import './App.css';
 import Board from './components/board';
 import Column from './components/column';
+import TodoList from './components/todolist';
+
 
 class App extends Component {
+	state = {
+		count: 0
+	};
+
+	increment = () => {
+		this.setState({
+			count: this.state.count + 1
+		});
+	};
+
+	decrement = () => {
+		this.setState({
+			count: this.state.count - 1
+		});
+	};
 render() {
 	return (
 	<div className="App">
-		<nav className="navbar navbar-expand-lg navbar-light bg-light">
-		<a className="navbar-brand" href="#">QuikBoard</a>
-		<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span className="navbar-toggler-icon" />
-		</button>
-		<div className="collapse navbar-collapse" id="navbarNav">
-			<ul className="navbar-nav">
-			<li className="nav-item active">
-				<a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-			</li>
-			<li className="nav-item">
-				<a className="nav-link" href="#">Features</a>
-			</li>
-			<li className="nav-item">
-				<a className="nav-link" href="#">Pricing</a>
-			</li>
-			</ul>
-		</div>
-		</nav>
-			<Board/>
+			<nav className="navbar navbar-light bg-light">
+				<img src={require('./logo.svg')} style={{ width: '7%' }} />
+				<a className="navbar-brand" href="#">
+					
+				</a>
+			</nav>
+			<br/>
+			<br/>
+			<h4>Kanban Board</h4>
+			<br/>
 			<div className="container">
-				<Column/>
+			<div className = "row">
+					<Column title = "TO DO"></Column>
+					<Column title = "IN PROGRESS"></Column>
+					<Column title = "COMPLETED"></Column>	
+				</div>
 			</div>
+			
 	</div>
 	);
 }
