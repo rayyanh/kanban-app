@@ -98,7 +98,9 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background: #ededed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   [tabindex="-1"]:focus {
@@ -4519,7 +4521,7 @@
   }
   
   .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);  
     border-color: rgba(0, 0, 0, 0.1);
   }
   
@@ -4595,9 +4597,9 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #ededed;
+    background-color: #88d498   ;
     background-clip: border-box;
-    border: 3px solid #e3e3e3;
+    border: 3px solid #f1f1f1;
     border-radius: 0.25rem;
   }
   
