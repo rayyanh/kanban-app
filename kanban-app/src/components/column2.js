@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "./card";
 
-export default class Column extends Component {
+export default class Column2 extends Component {
   render() {
     return (
       <div className="col-lg-4">
@@ -9,7 +9,7 @@ export default class Column extends Component {
           <div className="card-body">
             <h5 className="card-title">{this.props.title}</h5>
           </div>
-          <Card color="cardOne" />
+          <Card color="cardTwo" />
         </div>
       </div>
     );
